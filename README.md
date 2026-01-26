@@ -65,10 +65,6 @@ Funcionalidades estão sendo implementadas de acordo com histórias de usuário 
 💼 Desenvolvedor Full Stack Jr.  
 🎯 Foco em projetos com arquitetura limpa, integração completa e experiência do usuário moderna.  
 
-📫 **Contato:** [seuemail@email.com]  
-🔗 **LinkedIn:** [linkedin.com/in/seulinkedin]  
-🐙 **GitHub:** [github.com/seuusuario]
-
 ---
 
 ## 📄 Licença
