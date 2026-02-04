@@ -17,7 +17,8 @@ O sistema tem como objetivo permitir o **controle completo de produtos e movimen
 - ⚛️ React  
 - 🎨 Material UI (Google Design System)  
 - 🌐 React Router  
-- 🔗 Axios  
+- 🔗 Axios
+- ✅ Validações em tempo real (email e senha)
 
 **Back-end**
 - ☕ Java 17+  
@@ -25,37 +26,56 @@ O sistema tem como objetivo permitir o **controle completo de produtos e movimen
 - 🔒 Spring Security (JWT)  
 - 🧱 Spring Data JPA  
 - 🐘 PostgreSQL  
-
+- 📦 API REST
 ---
 
 ## 🧩 Funcionalidades Principais
 
-- 👤 **Cadastro e Login de Usuários**  
-  - Validação de campos  
-  - Autenticação JWT  
-  - Persistência de sessão  
+### 👤 Cadastro de Usuário
 
-- 📦 **Gestão de Produtos**  
-  - Cadastro, edição e inativação  
-  - Busca e filtros  
-  - Validação de campos e controle de status  
+- Endpoint: POST /api/register
+- Validação de:
+- Campos obrigatórios
+- E-mail válido
+- Senha forte
+- Verificação de e-mail duplicado
+- Retornos HTTP adequados (200, 400, 409)
+- Integração completa Front ↔ Back com Axios
 
-- 🔄 **Movimentação de Estoque**  
-  - Registro de entradas e saídas  
-  - Regras de saldo e validações  
-  - Atualização automática de quantidades  
-
-- 📊 **Consulta e Histórico**  
-  - Exibição de saldo atual  
-  - Alertas de estoque baixo  
-  - Histórico detalhado de movimentações  
+### 🖥️ Interface de Cadastro
+- Formulário responsivo
+#### Feedback visual:
+- Erros personalizados
+- Loading
+- Mensagem de sucesso1
+- Botão habilitado apenas com dados válidos
+- Padrão visual Material Design
 
 ---
+## 🗂️ Organização do Repositório
+```
+Controle-Estoque/
+├── backend/   # API Spring Boot (branch: api)
+└── frontend/  # Aplicação React (branch: app)
+```
+Branches principais:
 
+- main → branch estável
+
+- api → desenvolvimento do back-end
+
+- app → desenvolvimento do front-end
+---
 ## ⚙️ Status do Projeto
 
 🛠️ **Em desenvolvimento**  
-Funcionalidades estão sendo implementadas de acordo com histórias de usuário e boas práticas de mercado.
+#### Próximos passos planejados:
+- Autenticação com JWT
+- Login de usuários
+- Gestão de produtos
+- Movimentações de estoque
+- Controle de permissões
+- Deploy
 
 ---
 
